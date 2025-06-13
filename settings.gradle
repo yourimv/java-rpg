@@ -1,0 +1,5 @@
+rootProject.name = 'rpg'
+
+include 'core'
+include 'shared'
+include 'input-cli'
