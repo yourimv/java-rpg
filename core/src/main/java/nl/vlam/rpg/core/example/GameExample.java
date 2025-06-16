@@ -14,10 +14,12 @@ import nl.vlam.rpg.input.CLIInput;
 public class GameExample {
 
     public static void main(String[] args) {
-        List<Action> playerActions = new ArrayList<>();
-        playerActions.add(new AttackAction());
+        List<Action> playerActions = List.of(new AttackAction());
         Player player = new Player(0, "Knight", 100, 25, playerActions, new CLIInput());
-        Enemy enemy = new Enemy(1, "Goblin", 50, 1, Collections.emptyList());
+
+        List<Action> enemyActions = List.of(new AttackAction());
+        Enemy enemy = new Enemy(1, "Goblin", 50, 1, enemyActions);
+
         Scene scene = new BattleScene(player,enemy);
         scene.performScene();
     }

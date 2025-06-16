@@ -16,7 +16,7 @@ public class Player extends Actor {
 
     @Override
     public void performAction(ActionContext context) {
-        if (actions.isEmpty()) {
+        if (actions.isEmpty() || !isAlive()) {
             return;
         }
         int choice  = input.get();

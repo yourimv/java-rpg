@@ -19,6 +19,7 @@ public class BattleScene extends Scene {
         while (player.isAlive() && enemy.isAlive()) {
             System.out.println("Player's turn:");
             player.performAction(new ActionContext(player, enemy));
+            enemy.performAction(new ActionContext(enemy, player));
         }
     }
 }
