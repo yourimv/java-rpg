@@ -15,10 +15,10 @@ public class GameExample {
 
     public static void main(String[] args) {
         List<Action> playerActions = List.of(new AttackAction());
-        Player player = new Player(0, "Knight", 100, 25, playerActions, new CLIInput());
+        Player player = new Player(0, "Knight", playerActions, new CLIInput());
 
         List<Action> enemyActions = List.of(new AttackAction());
-        Enemy enemy = new Enemy(1, "Goblin", 50, 1, enemyActions);
+        Enemy enemy = new Enemy(1, "Goblin", 50, 1, 1, enemyActions);
 
         Scene scene = new BattleScene(player,enemy);
         scene.performScene();
