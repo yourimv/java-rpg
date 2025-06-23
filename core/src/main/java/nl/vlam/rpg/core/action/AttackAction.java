@@ -1,13 +1,11 @@
 package nl.vlam.rpg.core.action;
 
 import nl.vlam.rpg.core.actor.Actor;
-import nl.vlam.rpg.core.actor.skill.Skill;
 
-public class AttackAction implements Action {
+class AttackAction extends Action {
 
-    @Override
-    public int getId() {
-        return Skill.STRENGTH.getId();
+    AttackAction(int id) {
+        super(id);
     }
 
     @Override

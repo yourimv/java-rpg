@@ -1,10 +1,21 @@
 package nl.vlam.rpg.core.action;
 
-public interface Action {
-    int getId();
-    int perform(ActionContext context);
+public abstract class Action {
 
-    default String getName() {
+    private final int id;
+
+    protected Action(int id) {
+        this.id = id;
+    }
+
+
+    public abstract int perform(ActionContext context);
+
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
         return this.getClass().getSimpleName();
     }
 }

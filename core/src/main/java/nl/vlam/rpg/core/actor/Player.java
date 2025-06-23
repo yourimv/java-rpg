@@ -9,7 +9,7 @@ import nl.vlam.rpg.core.action.Action;
 import nl.vlam.rpg.core.action.ActionContext;
 import nl.vlam.rpg.core.actor.skill.Skill;
 import nl.vlam.rpg.core.actor.skill.SkillProgress;
-import nl.vlam.rpg.input.Input;
+import nl.vlam.rpg.shared.input.Input;
 
 public class Player extends Actor {
 

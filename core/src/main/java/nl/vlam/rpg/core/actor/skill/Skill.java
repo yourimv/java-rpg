@@ -1,12 +1,12 @@
 package nl.vlam.rpg.core.actor.skill;
 
 public enum Skill {
-
-    VITALITY(0),
-    ATTACK(1),
-    STRENGTH(2),
-    DEFENSE(3),
-    MAGIC(4);
+    NONE(0),
+    VITALITY(1),
+    ATTACK(2),
+    STRENGTH(3),
+    DEFENSE(4),
+    MAGIC(5);
 
     private final int id;
 

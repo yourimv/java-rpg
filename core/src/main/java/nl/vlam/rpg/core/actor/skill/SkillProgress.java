@@ -30,11 +30,11 @@ public class SkillProgress {
         if (this.experience >= requiredExperience) {
             level++;
         }
-        System.out.printf("Gained %d experience. Total experience: %d. Required experience: %d. Current level: %d.%n",
+        System.out.printf("Gained %d experience.%n Total experience: %d.%n Required experience for level up: %d.%n Current level: %d.%n",
                 amount, this.experience, requiredExperience, this.level);
     }
 
     private int getExperienceForNextLevel() {
-        return (int) Math.ceil(5 * (Math.pow(level, 3)) / 4);
+        return (int) Math.ceil(5 * (Math.pow(level, 3)) / 4) * 4;
     }
 }

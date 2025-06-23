@@ -1,4 +1,4 @@
-package nl.vlam.rpg.input;
+package nl.vlam.rpg.shared.input;
 
 import java.util.Scanner;
 
